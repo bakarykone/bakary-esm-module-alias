@@ -3,7 +3,7 @@ import path from 'node:path';
 export default function generateAliasesResolver(aliasesToAdd, options) {
   const getAliases = () => {
 
-    const base = process.cwd();
+    const base = '';
     const windowsSupportString = process.platform === 'win32' ? 'file://' : '';
 
     const absoluteAliases = Object.keys(aliasesToAdd).reduce((acc, key) =>
